@@ -1,0 +1,58 @@
+#define MODULES_DIRECTORY node_modules
+#define DEBUG_MODE_FULL
+
+class Header
+{
+	gameType = Coop;
+	minPlayers = 1;
+	maxPlayers = 60;
+};
+
+author = "McDiod für Gruppe Adler";                                             //Missionsersteller (Du)
+onLoadName = "Seltheon HQ";                                                   	//Name der Mission
+onLoadMission = "";                                                             //Beschreibung der Mission (wird im Ladebildschirm unterhalb des Ladebildes angezeigt)
+loadScreen = "data\loadpic.paa";                                                //Ladebild
+
+respawn = 3;
+respawnDelay = 0;
+respawnTemplates[] = {"Base"};
+respawnOnStart = -1;
+respawnDialog = 0;
+disabledAI = 1;
+enableDebugConsole = 1;
+
+corpseManagerMode = 1; 															// Type of removed bodies: 0 - none, 1 - all, 2 - only respawnable, 3 - only non-respawnable
+corpseLimit = 30; 																// Max number of bodies which can be available at the same time. When exceeded, start deleting immediately.
+corpseRemovalMinTime = 300; 													// Minimal time in seconds a body stays in the scene (can't be removed sooner).
+corpseRemovalMaxTime = 500; 													// Maximal time in seconds after which a dead body is removed (can't stay longer)
+
+wreckManagerMode = 0; 															// Type of removed wrecks: 0 - none, 1 - all, 2 - only respawnable, 3 - only non-respawnable
+wreckLimit = 20; 																// Max number of wrecks which can be available at the same time. When exceeded, start deleting immediately.
+wreckRemovalMinTime = 500; 														// Minimal time in seconds a wreck stays in the scene (can't be removed sooner).
+wreckRemovalMaxTime = 1200;														// Maximal time in seconds after which a wreck is removed (can't stay longer)
+
+
+//==============================================================================
+#include "node_modules\grad-listBuymenu\grad_listBuymenu.hpp"
+
+class CfgFunctions {
+	#include "node_modules\grad-persistence\cfgFunctions.hpp"
+	#include "node_modules\grad-listBuymenu\cfgFunctions.hpp"
+};
+
+class restrictedArsenal {
+	#include "restrictedArsenal.hpp"
+};
+
+class CfgGradPersistence {
+    missionTag = "my_persistent_mission";
+    loadOnMissionStart = 1;
+    waitCondition = "true";
+    saveUnits = 2;
+    saveVehicles = 0;
+    saveStatics = 1;
+    savePlayerInventory = 1;
+    savePlayerDamage = 0;
+    savePlayerPosition = 0;
+    savePlayerMoney = 1;
+};

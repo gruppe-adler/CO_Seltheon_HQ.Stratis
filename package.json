@@ -1,0 +1,6 @@
+{
+        "dependencies": {
+                "grad-listbuymenu": ">=0.0.3",
+                "grad-persistence": ">=0.0.1"
+        }
+}
