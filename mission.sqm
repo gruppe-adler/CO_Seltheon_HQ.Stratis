@@ -12,10 +12,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4340.5103,229.80711,3806.9849};
-		dir[]={-0.015431954,-0.64472151,-0.76427007};
-		up[]={-0.013015429,0.76441675,-0.64459032};
-		aside[]={-0.99980122,4.7981302e-008,0.020187927};
+		pos[]={4339.2061,228.7572,3831.7253};
+		dir[]={-0.21091411,-0.31070009,-0.92685437};
+		up[]={-0.068948619,0.95049554,-0.30299199};
+		aside[]={-0.97510767,-1.2200326e-007,0.22189467};
 	};
 };
 binarizationWanted=0;
@@ -448,6 +448,25 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnButton";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"SCALAR"
+						};
+					};
+					value=0;
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -479,25 +498,6 @@ class CustomAttributes
 							};
 						};
 					};
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnButton";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"SCALAR"
-						};
-					};
-					value=0;
 				};
 			};
 		};
@@ -16976,11 +16976,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={5352.5908,-0.0928936,3104.885};
+				position[]={4370.395,231.62137,3817.0974};
 			};
 			id=470;
 			type="ModuleCurator_F";
-			atlOffset=31.643;
+			atlOffset=4.7364502;
 			class CustomAttributes
 			{
 				class Attribute0

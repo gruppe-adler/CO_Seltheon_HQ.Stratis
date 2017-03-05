@@ -26,3 +26,5 @@ _unit addWeapon "Binocular";
 for "_i" from 1 to 6 do {_unit addItemToUniform "ACE_fieldDressing"};
 for "_i" from 1 to 4 do {_unit addItemToUniform "ACE_morphine"};
 for "_i" from 1 to 6 do {_unit addItemToVest "rhs_mag_30Rnd_556x45_Mk318_Stanag"};
+
+player setVariable ["co_seltheon_randomLoadoutDone",true,true];

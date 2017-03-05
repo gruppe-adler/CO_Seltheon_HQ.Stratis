@@ -33,6 +33,7 @@ wreckRemovalMaxTime = 1200;														// Maximal time in seconds after which 
 
 
 //==============================================================================
+#include "buyables\cfgGradBuymenu.hpp"
 #include "node_modules\grad-listBuymenu\grad_listBuymenu.hpp"
 
 class CfgFunctions {
@@ -45,12 +46,13 @@ class restrictedArsenal {
 };
 
 class CfgGradPersistence {
-    missionTag = "my_persistent_mission";
+    missionTag = "seltheon_hq";
     loadOnMissionStart = 1;
-    waitCondition = "true";
-    saveUnits = 2;
+	missionWaitCondition = "true";
+    playerWaitCondition = "(_this select 0) getVariable ['co_seltheon_randomLoadoutDone',false]";
+    saveUnits = 0;
     saveVehicles = 0;
-    saveStatics = 1;
+    saveStatics = 0;
     savePlayerInventory = 1;
     savePlayerDamage = 0;
     savePlayerPosition = 0;
