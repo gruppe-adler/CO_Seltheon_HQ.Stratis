@@ -6,11 +6,11 @@ class launchers {
         stock = 100;
         price = 1000;
     };
-    class rhs_weap_fgm148 {
+    class rhs_weap_fim92 {
         stock = 100;
         price = 1000;
     };
-    class rhs_weap_fim92 {
+    class rhs_weap_fgm148 {
         stock = 100;
         price = 1000;
     };

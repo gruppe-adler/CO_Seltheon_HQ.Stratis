@@ -35,23 +35,15 @@ vests[] = {
     "V_TacChestrig_oli_F"
 };
 
-items[] = {
-    //Helme
+headgear[] = {
     "H_Cap_blk",
     "H_Cap_oli",
     "H_Booniehat_oli",
     "H_Booniehat_khk",
-    "rhs_beanie_green",
+    "rhs_beanie_green"
+};
 
-    //Goggles
-    "NeckTight_DMBLK",
-    "NeckTight_GryBLK",
-    "NeckTight_ODBLK",
-    "NeckTight_GryCLR",
-    "NeckTight_TanCLR",
-    "rhs_googles_clear",
-
-    //Items
+items[] = {
     "tf_anprc152",
     "ItemCompass",
     "ItemMap",

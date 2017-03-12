@@ -17,12 +17,13 @@ _create = ["AmmoboxInit", [_box, false, {true}]] spawn BIS_fnc_arsenal;
     _items = [missionConfigFile >> "restrictedArsenal","items",[]] call BIS_fnc_returnConfigEntry;
     _availableUniforms = [missionConfigFile >> "restrictedArsenal","uniforms",[]] call BIS_fnc_returnConfigEntry;
     _availableVests = [missionConfigFile >> "restrictedArsenal","vests",[]] call BIS_fnc_returnConfigEntry;
+    _availableHeadgear = [missionConfigFile >> "restrictedArsenal","headgear",[]] call BIS_fnc_returnConfigEntry;
     _magazines = [missionConfigFile >> "restrictedArsenal","magazines",[]] call BIS_fnc_returnConfigEntry;
     _weapons = [missionConfigFile >> "restrictedArsenal","weapons",[]] call BIS_fnc_returnConfigEntry;
 
 
     [_box, _backpacks] call BIS_fnc_addVirtualBackpackCargo;
-    [_box, _items + _availableUniforms + _availableVests] call BIS_fnc_addVirtualItemCargo;
+    [_box, _items + _availableUniforms + _availableVests + _availableHeadgear] call BIS_fnc_addVirtualItemCargo;
     [_box, _magazines] call BIS_fnc_addVirtualMagazineCargo;
     [_box, _weapons] call BIS_fnc_addVirtualWeaponCargo;
 

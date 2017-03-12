@@ -22,10 +22,6 @@ class assault {
         price = 1000;
         stock = 30;
     };
-    class rhs_weap_ak74m_camo_npz {
-        price = 1000;
-        stock = 30;
-    };
     class rhs_weap_ak74m_gp25 {
         price = 1000;
         stock = 30;
@@ -55,6 +51,10 @@ class assault {
         stock = 30;
     };
     class rhs_weap_m21a_pr {
+        price = 1000;
+        stock = 30;
+    };
+    class rhs_weap_m21a_pr_pbg40 {
         price = 1000;
         stock = 30;
     };
@@ -158,7 +158,7 @@ class assault {
         price = 1000;
         stock = 30;
     };
-    class rhs_weap_m21a_pr_pbg40 {
+    class arifle_Mk20C_F {
         price = 1000;
         stock = 30;
     };
@@ -166,15 +166,10 @@ class assault {
         price = 1000;
         stock = 30;
     };
-    class arifle_Mk20C_F {
-        price = 1000;
-        stock = 30;
-    };
     class arifle_TRG21_F {
         price = 1000;
         stock = 30;
     };
-
     class 30Rnd_556x45_Stanag {
         stock = 200;
         price = 100;
