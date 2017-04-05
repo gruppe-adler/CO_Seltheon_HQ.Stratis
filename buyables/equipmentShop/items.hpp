@@ -3,12 +3,16 @@ class items {
     kindOf = "Items";
 
     class ACE_fieldDressing {
+        displayName = "Bandage (x5)";
+        amount = 5;
         stock = 1000;
-        price = 5;
+        price = 10;
     };
     class ACE_morphine {
+        displayName = "Morphine (x5)";
+        amount = 5;
         stock = 200;
-        price = 10;
+        price = 30;
     };
     class ACE_epinephrine {
         stock = 200;
