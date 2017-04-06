@@ -1,4 +1,5 @@
 [] execVM "intro.sqf";
+[] execVM "seltheonInfoBriefing.sqf";
 
 [{!isNull player}, {
     player allowDamage false;
