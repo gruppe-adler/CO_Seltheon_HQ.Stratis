@@ -5,17 +5,13 @@
 
 waitUntil {time > 3};
 
-hint composeText [
-    parseText "<img size='10' image='data\logo.paa'/>",
-    lineBreak,
-    parseText "<t size='2.4'>Seltheon HQ</t>",
-    lineBreak,
-    lineBreak,
-    "Informationen unter:",
-    lineBreak,
-    "Karte >> Briefing >> Seltheon",
-    lineBreak
-];
-
-_text = format ["<img size= '6' style='vertical-align:middle' shadow='false' image='data\gruppe-adler.paa'/><br/><t size='.9' color='#FFFFFF'>%1</t>", toUpper _missionName];
-[_text,0,0,2,2] spawn BIS_fnc_dynamicText;
+_text = (
+    "<img size= '5' style='vertical-align:middle' shadow='false' image='data\logo.paa'/>" +
+    "<br/>" +
+    "<t size='1.2' color='#FFFFFF'>SELTHEON HQ</t>" +
+    "<br/>" +
+    "<t size='0.5'>Informationen unter:</t>" +
+    "<br/>" +
+    "<t size='0.5'>Karte >> Briefing >> Seltheon</t>"
+);
+[_text,0,0,4,2] spawn BIS_fnc_dynamicText;

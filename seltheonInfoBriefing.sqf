@@ -1,5 +1,5 @@
 _seltheon = (
-    "<font size='26'>Seltheon HQ</font>" +
+    "<font size='26' color='#BDBDBD'>Seltheon HQ</font>" +
     "<br/>" +
     "Sie befinden sich im Seltheon Hauptquartier auf Stratis. Dass Sie hier sind bedeutet, dass am kommenden Montag ein Seltheon Einsatz stattfindet." +
     "<br/>" +
